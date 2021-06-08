@@ -12,5 +12,6 @@ class Oystercard
   def top_up(amount)
     @balance = @balance + amount
   end
-
+  def deduct(fare)
+  end 
 end
