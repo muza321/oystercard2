@@ -18,4 +18,8 @@ end
 
 end
 
+  it 'raises and error when top-up limit exceeded' do
+    expect{ subject.top_up 100 }.to raise_error 'Exceeds top-up limit of £90'
+  end
+
 end
